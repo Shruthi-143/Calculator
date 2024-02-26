@@ -16,7 +16,7 @@ jobs:
       run: |
         mkdir test-venv
         cd test-venv
-        python -m venv .
+        python -m venv /tmp/test
         source ./bin/activate
         echo "VIRTUAL_ENV: $VIRTUAL_ENV"       
     - name: Install dependencies
