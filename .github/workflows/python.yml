@@ -20,7 +20,7 @@ jobs:
         source ./bin/activate
         echo "VIRTUAL_ENV: $VIRTUAL_ENV"       
     - name: Install dependencies
-      working-directory: /uni/test/app/venv
+      working-directory: /test-venv
       run: |
         python -m pip install --upgrade pip
         pip install pyyaml
